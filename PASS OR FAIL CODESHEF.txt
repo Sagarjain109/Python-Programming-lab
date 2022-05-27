@@ -1,0 +1,15 @@
+def check(x,y,z):
+    m= 3*y
+    r= x-y
+    s= r*(-1)
+    om= m+s
+    if om>=z:
+        return 'PASS'
+    else:
+        return 'FAIL'
+
+T= int(input())
+for i in range(T):
+    N,X,P= map(int,input().split())
+    out= check(N,X,P)
+    print(out)
