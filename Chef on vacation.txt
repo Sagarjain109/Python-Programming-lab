@@ -1,0 +1,10 @@
+'''T is the total number of cases in which X is number of days spends with family on vacation, Y is number of days spends with friends and Z is
+total number of days of vacation. to make program if chef enjoy vacation with both print YES else NO.'''
+ 
+T = int(input())
+for i in range(T):
+    X,Y,Z = map(int,input().split(" "))
+    if  (X+Y)<=Z:
+        print('YES')
+    else:
+        print('NO')
